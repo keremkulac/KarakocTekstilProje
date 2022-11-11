@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textile_navigation"
+    app:startDestination="@id/patternFragment">
+
+    <fragment
+        android:id="@+id/patternFragment"
+        android:name="com.keremkulac.karakoctekstil.PatternFragment"
+        android:label="fragment_pattern"
+        tools:layout="@layout/fragment_pattern" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.keremkulac.karakoctekstil.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" />
+    <fragment
+        android:id="@+id/costFragment"
+        android:name="com.keremkulac.karakoctekstil.CostFragment"
+        android:label="fragment_cost"
+        tools:layout="@layout/fragment_cost" />
+</navigation>
