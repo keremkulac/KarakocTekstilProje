@@ -5,14 +5,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
 
    <com.google.android.material.bottomappbar.BottomAppBar
        android:id="@+id/bottomAppBar"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       app:fabCradleVerticalOffset="10dp"
-       app:fabCradleMargin="20dp"
+
+       app:fabCradleMargin="10dp"
        app:fabCradleRoundedCornerRadius="10dp"
        android:layout_gravity="bottom">
        <com.google.android.material.bottomnavigation.BottomNavigationView

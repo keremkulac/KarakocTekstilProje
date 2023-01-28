@@ -3,10 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/drawable/circle_button.xml" value="0.1885" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/drawable/ic_add_photo.xml" value="0.13" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/drawable/ic_close.xml" value="0.2555" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/drawable/ic_cost.xml" value="0.1355" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/drawable/ic_order.xml" value="0.302" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/drawable/ic_pattern.xml" value="0.302" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/drawable/image_view_bg.xml" value="0.145" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/drawable/popup_item_border.xml" value="0.2555" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/drawable/style_spinner.xml" value="0.1855" />
         <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/activity_tab.xml" value="0.27309782608695654" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/fragment_add.xml" value="0.3046875" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/fragment_add_order.xml" value="0.25" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/fragment_add_pattern.xml" value="0.25" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/fragment_cost.xml" value="0.5" />
         <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/fragment_order.xml" value="0.135258358662614" />
         <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/fragment_pattern.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/fragment_popup.xml" value="0.25" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/item_pattern.xml" value="0.33" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/loading_item.xml" value="0.30104166666666665" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/layout/spinner_view.xml" value="0.3015625" />
         <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/menu/bottom_navigation_manu.xml" value="0.27384615384615385" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/kerem/AndroidStudioProjects/KarakocTekstil/app/src/main/res/menu/search_menu.xml" value="0.28489583333333335" />
       </map>
     </option>
   </component>
