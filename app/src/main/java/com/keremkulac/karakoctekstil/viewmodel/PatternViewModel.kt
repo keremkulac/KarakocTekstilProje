@@ -7,27 +7,19 @@ import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModelProviders
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
 import com.keremkulac.karakoctekstil.adapter.PatternAdapter
 import com.keremkulac.karakoctekstil.model.Pattern
-import com.keremkulac.karakoctekstil.service.PatternAPIService
 import com.keremkulac.karakoctekstil.util.replaceFragment
 import com.keremkulac.karakoctekstil.view.PatternFragment
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.observers.DisposableSingleObserver
-import io.reactivex.schedulers.Schedulers
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 
 
 class PatternViewModel(application: Application) : BaseViewModel(application) {
-    private val patternAPIService = PatternAPIService()
-    private val disposable = CompositeDisposable()
     val patterns = MutableLiveData<List<Pattern>>()
     val patternError = MutableLiveData<Boolean>()
     val patternLoading =  MutableLiveData<Boolean>()
@@ -109,29 +101,6 @@ class PatternViewModel(application: Application) : BaseViewModel(application) {
             adapter.filterList(filteredlist)
         }
     }
-
-
-    fun getDataFromPatternAPI(){
-        disposable.add(
-            patternAPIService.getData()
-                .subscribeOn(Schedulers.newThread())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribeWith(object : DisposableSingleObserver<List<Pattern>>(){
-                    override fun onSuccess(t: List<Pattern>) {
-                       // storeInSQLite(t)
-                        showPatterns(t)
-                        initialPatternList = t
-
-                    }
-                    override fun onError(e: Throwable) {
-                        Log.d("LOG","Döviz kuru alınamadı")
-                        patternError.value = true
-                        patternLoading.value = false
-                    }
-                })
-        )
-    }
-
 
 
     private fun showPatterns(patternList : List<Pattern>){

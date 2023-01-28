@@ -11,7 +11,6 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.keremkulac.karakoctekstil.R
 import com.keremkulac.karakoctekstil.model.Order
 import com.keremkulac.karakoctekstil.util.replaceFragment
-import com.keremkulac.karakoctekstil.view.AddOrderFragment
 import com.keremkulac.karakoctekstil.view.OrderFragment
 import java.util.HashMap
 

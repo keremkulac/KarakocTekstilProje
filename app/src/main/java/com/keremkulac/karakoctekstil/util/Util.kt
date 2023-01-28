@@ -2,22 +2,14 @@ package com.keremkulac.karakoctekstil.util
 
 import android.app.ProgressDialog
 import android.content.Context
-import android.os.Bundle
-import android.util.Log
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.storage.FirebaseStorage
 import com.keremkulac.karakoctekstil.R
-import com.keremkulac.karakoctekstil.model.Pattern
-import com.keremkulac.karakoctekstil.view.PatternFragment
-import java.util.HashMap
 
 
 //Extension

@@ -7,20 +7,15 @@ import android.net.Uri
 import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreSettings
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.ktx.storage
 import com.keremkulac.karakoctekstil.model.Pattern
-import com.keremkulac.karakoctekstil.util.FirebaseState
 import com.keremkulac.karakoctekstil.util.customProgressDialog
 import com.keremkulac.karakoctekstil.util.replaceFragment
-import com.keremkulac.karakoctekstil.view.AddFragment
 import com.keremkulac.karakoctekstil.view.PatternFragment
 import java.util.*
 
@@ -28,14 +23,13 @@ import java.util.*
 class AddPatternViewModel(application: Application) : BaseViewModel(application) {
     private var isHaveSamePattern : Boolean? = false
     private var firestore: FirebaseFirestore
-    private lateinit var firebaseDatabase : FirebaseDatabase
+    private var firebaseDatabase : FirebaseDatabase
     private var storageReference = Firebase.storage.reference
     private lateinit var uuid : UUID
     private lateinit var pictureName : String
     private val EMPTY_PATTERN_IMAGE_URL= "https://firebasestorage.googleapis.com/v0/b/karakoctextile.appspot.com/o/images%2F8694a2f3-c01c-4ef6-8704-66a504f5db52.jpg?alt=media&token=e1c04430-3519-4093-b904-1368a7ab2a2e"
     private val BASE_PATTERN_IMAGE_URI= Uri.parse("android.resource://com.keremkulac.karakoctekstil/drawable/empty_pattern_image")
-    private val _firebaseState by lazy { MutableLiveData<FirebaseState>(FirebaseState.Idle) }
-    val firebaseState : LiveData<FirebaseState> = _firebaseState
+
 
     init {
         firestore = FirebaseFirestore.getInstance()

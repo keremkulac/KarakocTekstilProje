@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationSelect(fragmentManager)
         replaceFragment(PatternFragment(),fragmentManager)
         fab.setOnClickListener {
-            Log.d("TAG",bottomNavigationView.menu.getItem(0).toString())
             bottomNavigationView.menu.getItem(0).isChecked = false
             replaceFragment(AddFragment(),fragmentManager)
         }

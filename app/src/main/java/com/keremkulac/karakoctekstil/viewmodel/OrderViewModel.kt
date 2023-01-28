@@ -3,7 +3,6 @@ package com.keremkulac.karakoctekstil.viewmodel
 import android.app.Application
 import android.content.Context
 import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import com.google.firebase.firestore.FirebaseFirestore
 import com.keremkulac.karakoctekstil.adapter.OrderAdapter

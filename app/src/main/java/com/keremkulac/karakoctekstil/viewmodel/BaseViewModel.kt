@@ -1,10 +1,6 @@
 package com.keremkulac.karakoctekstil.viewmodel
 
 import android.app.Application
-import android.content.Intent
-import androidx.activity.result.ActivityResultCallback
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContract
 import androidx.lifecycle.AndroidViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

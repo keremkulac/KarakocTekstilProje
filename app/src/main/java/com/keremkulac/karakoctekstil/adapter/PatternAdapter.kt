@@ -13,9 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.keremkulac.karakoctekstil.R
 import com.keremkulac.karakoctekstil.databinding.ItemPatternBinding
 import com.keremkulac.karakoctekstil.model.Pattern
-import com.keremkulac.karakoctekstil.util.replaceFragment
 import com.keremkulac.karakoctekstil.view.PatternDetailFragment
-import com.keremkulac.karakoctekstil.viewmodel.PatternDetailViewModel
 import com.keremkulac.karakoctekstil.viewmodel.PatternViewModel
 import kotlinx.android.synthetic.main.item_pattern.view.*
 import kotlin.collections.ArrayList
